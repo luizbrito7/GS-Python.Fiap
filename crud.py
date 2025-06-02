@@ -103,8 +103,6 @@ def updateStatus():
         listTasks()
         break
 
-        
-
 def updateName():
     
     while True:
@@ -119,10 +117,11 @@ def updateName():
             
             if newTask == "":
                 print("\nTitulo nao pode ser vazio. Tente novamente.")
-                break
+                continue
             else : 
                 tasks[numTask][0] = newTask
                 print(f"\nTask com ID {numTask} titulo alterado para '{newTask}' com sucesso.")
+                break
         
         else: 
             print("\nOpcao invalida digite o ID de uma task valida\n")
